@@ -21,6 +21,8 @@ namespace gameLoop
 			slText(200, 220, "Sprites, text, sound, input, and more!");
 			slLine(48, 210, 352, 210);
 			Draw();
+
+			cout << "commit test line...again ;(" << endl;
 		}
 		close();
 	}
