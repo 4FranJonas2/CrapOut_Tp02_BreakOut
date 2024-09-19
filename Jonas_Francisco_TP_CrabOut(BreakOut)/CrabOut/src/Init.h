@@ -1,10 +1,10 @@
 #pragma once
-#include "Draw.h"
+#include "Input.h"
 
 namespace gameInit
 {
-	void init();
-	void initSim();
-	void resetMenu();
-	void resetGameplay();
+	void Init(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simMainMenuStatus);
+	void InitSim();
+	void ResetMenu();
+	void ResetGameplay();
 }

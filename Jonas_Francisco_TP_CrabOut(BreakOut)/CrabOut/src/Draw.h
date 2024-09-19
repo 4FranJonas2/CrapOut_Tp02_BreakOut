@@ -1,8 +1,8 @@
 #pragma once
-#include "Utils.h"
+#include "Player.h"
 
 namespace drawSimulation
 {
+	void Draw(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& sinMainMenuStatus);
 	void initDraw();
-	void Draw();
 }

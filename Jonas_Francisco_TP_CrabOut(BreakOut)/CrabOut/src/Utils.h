@@ -35,16 +35,10 @@ struct Vector2
 	float y;
 };
 
-struct Rectangle
-{
-	Vector2 recDimensions;
-	Vector2 recPosition;
-	Color recColor = WHITE;
-};
-
 struct Ball
 {
 	float radius;
 	Vector2 ballPosition;
 	Color ballColor = RED;
 };
+
