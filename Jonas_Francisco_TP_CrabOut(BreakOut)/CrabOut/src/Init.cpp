@@ -10,5 +10,18 @@ namespace gameInit
 		slSetTextAlign(SL_ALIGN_CENTER);
 	}
 
+	void initSim()
+	{
+
+	}
+
+	void resetMenu()
+	{
+	}
+
+	void resetGameplay()
+	{
+	}
+
 }
 

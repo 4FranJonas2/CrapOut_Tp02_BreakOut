@@ -19,15 +19,27 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Ball.cpp" />
+    <ClCompile Include="src\Bricks.cpp" />
+    <ClCompile Include="src\Draw.cpp" />
     <ClCompile Include="src\GameLoop.cpp" />
     <ClCompile Include="src\Init.cpp" />
+    <ClCompile Include="src\Input.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Player.cpp" />
+    <ClCompile Include="src\Update.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Ball.h" />
+    <ClInclude Include="src\Briks.h" />
     <ClInclude Include="src\Color.h" />
     <ClInclude Include="src\Constants.h" />
+    <ClInclude Include="src\Draw.h" />
     <ClInclude Include="src\GameLoop.h" />
     <ClInclude Include="src\Init.h" />
+    <ClInclude Include="src\Input.h" />
+    <ClInclude Include="src\Player.h" />
+    <ClInclude Include="src\Update.h" />
     <ClInclude Include="src\Utils.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -5,7 +5,7 @@
 namespace gameLoop
 {
 	void gameLoop();
-	void init();
+	void gameInit::init();
 	void Draw();
 	void close();
 
