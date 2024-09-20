@@ -119,6 +119,15 @@
       <AdditionalLibraryDirectories>$(ProjectDir)\libs\sigil-vc2015\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>sigil.lib</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)libs\sigil-vc2015\sigil.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\glew32.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\OpenAL32.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\wrap_oal.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copiando dll....</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>

@@ -9,14 +9,13 @@ namespace gameLoop
 		MAINMENUSTATUS simMenuStatus;
 		GAMESTATUS simGamePlayStatus;
 		Ball ball;
+		gameInit::Init(simStatus, simMenuStatus, simGamePlayStatus);
 
 		while (!slShouldClose() && !slGetKey(SL_KEY_ESCAPE))
 		{
-			gameInit::Init(simStatus, simMenuStatus, simGamePlayStatus);
-
 			gameInput::Input(simStatus, simMenuStatus, simGamePlayStatus);
 			gameUpdate::Update(simStatus, simMenuStatus, simGamePlayStatus);
-			drawSimulation::Draw(simStatus, simMenuStatus, simGamePlayStatus);
+			gameDraw::Draw(simStatus, simMenuStatus, simGamePlayStatus);
 		}
 		close();
 	}

@@ -67,8 +67,10 @@ namespace gamePlayer
 	}
 	void DrawPlayer()
 	{
+		slSetForeColor(RED.r, RED.g, RED.b, RED.a);
 		slRectangleFill(player.recPosition.x, player.recPosition.y,
 			player.recDimensions.x,player.recDimensions.y);
+		slSetForeColor(WHITE.r, WHITE.g, WHITE.b, WHITE.a);
 	}
 	void DrawArenaLimits()
 	{
@@ -83,40 +85,42 @@ namespace gamePlayer
 
 	void InputPlayer(Rectangle& player)
 	{
-		if (SL_ALIGN_RIGHT)
+		if (slGetKey(SL_KEY_RIGHT))
 		{
 			player.playerDir = DIRECTION::RIGHT;
 		}
-		else if (SL_ALIGN_LEFT)
+		if (slGetKey(SL_KEY_LEFT))
 		{
 			player.playerDir = DIRECTION::LEFT;
 		}
+
 		StopMovement(player);
 	}
 	void StopMovement(Rectangle& player)
 	{
-		if (SL_ALIGN_RIGHT && SL_ALIGN_LEFT)
+		if (!slGetKey(SL_KEY_RIGHT) && !slGetKey(SL_KEY_LEFT))
 		{
 			player.playerDir = DIRECTION::STOP;
+			player.recPosition.x = player.recPosition.x;
 		}
 	}
 	void UpdatePlayer(Rectangle& player)
 	{
-		bool IsRightTopScreen = (player.recPosition.x + player.recDimensions.x) >= (screenWidth - minDistanceFromBorder);
-		bool IsLeftTopScreen = player.recPosition.x <= arenaLimits.recDimensions.x + minDistanceFromBorder;
+		bool IsRightSideScreen = (player.recPosition.x + player.recDimensions.x/2) >= (screenWidth - minDistanceFromBorder);
+		bool IsLeftSideScreen = (player.recPosition.x - player.recDimensions.x / 2) <= 0 + minDistanceFromBorder;
 
 		if (player.playerDir == DIRECTION::RIGHT)
 		{
-			if (!IsRightTopScreen)
-			{
-				player.recPosition.x -= playerSpeed * slGetDeltaTime();
-			}
-		}
-		else if (player.playerDir == DIRECTION::LEFT)
-		{
-			if (!IsLeftTopScreen)
+			if (!IsRightSideScreen)
 			{
 				player.recPosition.x += playerSpeed * slGetDeltaTime();
+			}
+		}
+		if (player.playerDir == DIRECTION::LEFT)
+		{
+			if (!IsLeftSideScreen)
+			{
+				player.recPosition.x -= playerSpeed * slGetDeltaTime();
 			}
 		}
 	}
