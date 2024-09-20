@@ -5,7 +5,7 @@
 
 enum class LOOPSTATUS
 {
-	NONE = 1,
+	NONE,
 	INITSIM,
 	MAINMENU,
 	GAME,
@@ -14,7 +14,8 @@ enum class LOOPSTATUS
 
 enum class MAINMENUSTATUS
 {
-	PLAY = 1,
+	NONE,
+	PLAY,
 	CREDITS,
 	EXIT,
 	BACK
@@ -22,7 +23,8 @@ enum class MAINMENUSTATUS
 
 enum class GAMESTATUS
 {
-	GAMEPLAY = 1,
+	NONE,
+	GAMEPLAY,
 	GAMEPAUSE,
 	GAMERESET,
 	GAMERESUME,

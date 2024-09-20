@@ -6,6 +6,7 @@ namespace gamePlayer
 	Rectangle player;
 	Rectangle bricks;
 	Rectangle arenaLimits;
+	Color color;
 
 	void InitPlayer()
 	{
@@ -35,8 +36,12 @@ namespace gamePlayer
 	}
 	Rectangle CreateBrick(Rectangle& bricks)
 	{
-
+		bricks.recColor = PURPLE;
 		
+		bricks.recDimensions.x = brickPaletteWidth;
+		bricks.recDimensions.y = brickPaletteHeigth;
+		bricks.recPosition.x = brickPosX;
+		bricks.recPosition.y = brickPosY;
 
 		return bricks;
 	}
@@ -52,25 +57,67 @@ namespace gamePlayer
 		return arenaLimits;
 	}
 
-	void InputPlayer()
+	void Input()
 	{
-
+		InputPlayer(player);
 	}
-
-	void UpdatePlayer()
+	void Update()
 	{
-
+		UpdatePlayer(player);
 	}
-
 	void DrawPlayer()
 	{
 		slRectangleFill(player.recPosition.x, player.recPosition.y,
 			player.recDimensions.x,player.recDimensions.y);
 	}
-
 	void DrawArenaLimits()
 	{
 		slRectangleOutline(arenaLimits.recPosition.x, arenaLimits.recPosition.y,
 			arenaLimits.recDimensions.x, arenaLimits.recDimensions.y);	
+	}
+	void DrawBrick()
+	{
+		slRectangleFill(bricks.recPosition.x, bricks.recPosition.y,
+			bricks.recDimensions.x, bricks.recDimensions.y);
+	}
+
+	void InputPlayer(Rectangle& player)
+	{
+		if (SL_ALIGN_RIGHT)
+		{
+			player.playerDir = DIRECTION::RIGHT;
+		}
+		else if (SL_ALIGN_LEFT)
+		{
+			player.playerDir = DIRECTION::LEFT;
+		}
+		StopMovement(player);
+	}
+	void StopMovement(Rectangle& player)
+	{
+		if (SL_ALIGN_RIGHT && SL_ALIGN_LEFT)
+		{
+			player.playerDir = DIRECTION::STOP;
+		}
+	}
+	void UpdatePlayer(Rectangle& player)
+	{
+		bool IsRightTopScreen = (player.recPosition.x + player.recDimensions.x) >= (screenWidth - minDistanceFromBorder);
+		bool IsLeftTopScreen = player.recPosition.x <= arenaLimits.recDimensions.x + minDistanceFromBorder;
+
+		if (player.playerDir == DIRECTION::RIGHT)
+		{
+			if (!IsRightTopScreen)
+			{
+				player.recPosition.x -= playerSpeed * slGetDeltaTime();
+			}
+		}
+		else if (player.playerDir == DIRECTION::LEFT)
+		{
+			if (!IsLeftTopScreen)
+			{
+				player.recPosition.x += playerSpeed * slGetDeltaTime();
+			}
+		}
 	}
 }

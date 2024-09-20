@@ -3,5 +3,5 @@
 
 namespace gameInput
 {
-	void Input(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& sinMainMenuStatus);
+	void Input(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus);
 }

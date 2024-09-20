@@ -6,8 +6,8 @@ namespace gamePlayer
 	enum class DIRECTION
 	{
 		STOP = 1,
-		UP,
-		DOWN
+		RIGHT,
+		LEFT
 	};
 
 	struct Rectangle
@@ -26,10 +26,13 @@ namespace gamePlayer
 	Rectangle CreateBrick(Rectangle& bricks);
 	Rectangle CreateArena(Rectangle& arenaLimits);
 
-	void InputPlayer();
-
-	void UpdatePlayer();
-
+	void Input();
+	void Update();
 	void DrawPlayer();
 	void DrawArenaLimits();
+	void DrawBrick();
+
+	void InputPlayer(Rectangle& player);
+	void StopMovement(Rectangle& player);
+	void UpdatePlayer(Rectangle& player);
 }

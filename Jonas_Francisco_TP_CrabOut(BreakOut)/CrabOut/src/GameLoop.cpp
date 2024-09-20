@@ -7,16 +7,16 @@ namespace gameLoop
 	{
 		LOOPSTATUS simStatus;
 		MAINMENUSTATUS simMenuStatus;
-		GAMESTATUS simMainMenuStatus;
+		GAMESTATUS simGamePlayStatus;
 		Ball ball;
-
-		gameInit::Init(simStatus, simMenuStatus, simMainMenuStatus);
 
 		while (!slShouldClose() && !slGetKey(SL_KEY_ESCAPE))
 		{
-			gameInput::Input(simStatus, simMenuStatus, simMainMenuStatus);
-			gameUpdate::Update(simStatus, simMenuStatus, simMainMenuStatus);
-			drawSimulation::Draw(simStatus, simMenuStatus, simMainMenuStatus);
+			gameInit::Init(simStatus, simMenuStatus, simGamePlayStatus);
+
+			gameInput::Input(simStatus, simMenuStatus, simGamePlayStatus);
+			gameUpdate::Update(simStatus, simMenuStatus, simGamePlayStatus);
+			drawSimulation::Draw(simStatus, simMenuStatus, simGamePlayStatus);
 		}
 		close();
 	}

@@ -13,6 +13,10 @@ const float playerPosY = playerPaletteHeigth + minDistanceFromBorder;
 
 //bricks settings
 const int maxInitBriks = 20;
+const float brickPaletteWidth = 60.0f;
+const float brickPaletteHeigth = 25.0f;
+const float brickPosX = 60.0f;
+const float brickPosY = 610.0f;
 
 //arena settings
 const float arenaPaletteWidth = screenWidth - minDistanceFromBorder;

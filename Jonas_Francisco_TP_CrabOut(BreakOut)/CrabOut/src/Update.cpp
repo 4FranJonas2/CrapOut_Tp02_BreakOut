@@ -2,8 +2,8 @@
 
 namespace gameUpdate
 {
-	void Update(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& sinMainMenuStatus)
+	void Update(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus)
 	{
-		gamePlayer::UpdatePlayer();
+		gamePlayer::Update();
 	}
 }
