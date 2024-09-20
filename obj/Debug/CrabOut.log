@@ -1,13 +1,9 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: El directorio Intermediate no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Intermediate.
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
-  Init.cpp
-C:\Users\Aula 1\Desktop\DOck aA\CrapOut_Tp02_BreakOut\src\Init.cpp(17,25): warning C4244: 'argumento': conversión de 'const float' a 'int'; posible pérdida de datos
-C:\Users\Aula 1\Desktop\DOck aA\CrapOut_Tp02_BreakOut\src\Init.cpp(17,12): warning C4244: 'argumento': conversión de 'const float' a 'int'; posible pérdida de datos
-  CrabOut.vcxproj -> C:\Users\Aula 1\Desktop\DOck aA\CrapOut_Tp02_BreakOut\bin\Debug\CrabOut.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
   copiando dll y res....
           1 archivo(s) copiado(s).
           1 archivo(s) copiado(s).
           1 archivo(s) copiado(s).
           1 archivo(s) copiado(s).
-  C:\Users\Aula 1\Desktop\DOck aA\CrapOut_Tp02_BreakOut\res\hHittoSushi.ttf
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\res\hHittoSushi.ttf
   1 archivo(s) copiado(s)

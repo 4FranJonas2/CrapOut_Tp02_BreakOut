@@ -19,30 +19,24 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Ball.cpp" />
-    <ClCompile Include="src\Bricks.cpp" />
-    <ClCompile Include="src\Draw.cpp" />
-    <ClCompile Include="src\GameLoop.cpp" />
-    <ClCompile Include="src\Init.cpp" />
-    <ClCompile Include="src\Input.cpp" />
-    <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Menu.cpp" />
-    <ClCompile Include="src\Player.cpp" />
-    <ClCompile Include="src\Update.cpp" />
+    <ClInclude Include="src\Entities\Ball.h" />
+    <ClInclude Include="src\Entities\Briks.h" />
+    <ClInclude Include="src\Entities\Player.h" />
+    <ClInclude Include="src\GamePlay\GameLoop.h" />
+    <ClInclude Include="src\GamePlay\Init.h" />
+    <ClInclude Include="src\GamePlay\Menu.h" />
+    <ClInclude Include="src\Settings\Color.h" />
+    <ClInclude Include="src\Settings\Constants.h" />
+    <ClInclude Include="src\Settings\Utils.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Ball.h" />
-    <ClInclude Include="src\Briks.h" />
-    <ClInclude Include="src\Color.h" />
-    <ClInclude Include="src\Constants.h" />
-    <ClInclude Include="src\Draw.h" />
-    <ClInclude Include="src\GameLoop.h" />
-    <ClInclude Include="src\Init.h" />
-    <ClInclude Include="src\Input.h" />
-    <ClInclude Include="src\Menu.h" />
-    <ClInclude Include="src\Player.h" />
-    <ClInclude Include="src\Update.h" />
-    <ClInclude Include="src\Utils.h" />
+    <ClCompile Include="src\Entities\Ball.cpp" />
+    <ClCompile Include="src\Entities\Bricks.cpp" />
+    <ClCompile Include="src\Entities\Player.cpp" />
+    <ClCompile Include="src\GamePlay\GameLoop.cpp" />
+    <ClCompile Include="src\GamePlay\Init.cpp" />
+    <ClCompile Include="src\GamePlay\main.cpp" />
+    <ClCompile Include="src\GamePlay\Menu.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

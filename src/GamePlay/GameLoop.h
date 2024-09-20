@@ -1,5 +1,5 @@
 #pragma once
-#include "Constants.h"
+#include "..\Settings\Constants.h"
 #include "Init.h"
 
 namespace gameLoop

@@ -1,5 +1,5 @@
 #pragma once
-#include "Input.h"
+#include "Menu.h"
 
 namespace gameInit
 {
