@@ -1,6 +1,8 @@
 #include "GameLoop.h"
 #include "iostream"
 
+//xcopy"projectDir\res" "outdir\res"
+
 namespace gameLoop
 {
 	void gameLoop()

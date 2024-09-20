@@ -123,10 +123,12 @@
       <Command>copy "$(ProjectDir)libs\sigil-vc2015\sigil.dll" "$(OutDir)"
 copy "$(ProjectDir)libs\sigil-vc2015\glew32.dll" "$(OutDir)"
 copy "$(ProjectDir)libs\sigil-vc2015\OpenAL32.dll" "$(OutDir)"
-copy "$(ProjectDir)libs\sigil-vc2015\wrap_oal.dll" "$(OutDir)"</Command>
+copy "$(ProjectDir)libs\sigil-vc2015\wrap_oal.dll" "$(OutDir)"
+
+xcopy "$(ProjectDir)res" "$(OutDir)res"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>copiando dll....</Message>
+      <Message>copiando dll y res....</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -144,6 +146,15 @@ copy "$(ProjectDir)libs\sigil-vc2015\wrap_oal.dll" "$(OutDir)"</Command>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)libs\sigil-vc2015\sigil.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\glew32.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\OpenAL32.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\wrap_oal.dll" "$(OutDir)"
+
+xcopy "$(ProjectDir)res" "$(OutDir)res"</Command>
+      <Message>copiando dll y res....</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -156,6 +167,15 @@ copy "$(ProjectDir)libs\sigil-vc2015\wrap_oal.dll" "$(OutDir)"</Command>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)libs\sigil-vc2015\sigil.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\glew32.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\OpenAL32.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\wrap_oal.dll" "$(OutDir)"
+
+xcopy "$(ProjectDir)res" "$(OutDir)res"</Command>
+      <Message>copiando dll y res....</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -172,6 +192,15 @@ copy "$(ProjectDir)libs\sigil-vc2015\wrap_oal.dll" "$(OutDir)"</Command>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(ProjectDir)libs\sigil-vc2015\sigil.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\glew32.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\OpenAL32.dll" "$(OutDir)"
+copy "$(ProjectDir)libs\sigil-vc2015\wrap_oal.dll" "$(OutDir)"
+
+xcopy "$(ProjectDir)res" "$(OutDir)res"</Command>
+      <Message>copiando dll y res....</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
