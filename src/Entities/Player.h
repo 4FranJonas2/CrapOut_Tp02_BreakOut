@@ -1,5 +1,5 @@
 #pragma once
-#include "Briks.h"
+#include "..\Settings\Utils.h"
 
 namespace gamePlayer
 {
@@ -10,26 +10,32 @@ namespace gamePlayer
 		LEFT
 	};
 
-	struct Rectangle
+	struct Player
 	{
-		Vector2 recDimensions;
-		Vector2 recPosition;
+		Rectangle rec;
 		Color recColor;
 		DIRECTION playerDir;
+	};
+
+	struct Arena
+	{
+		Rectangle rec;
+		Color recColor;
 	};
 
 	void InitPlayer();
 	void InitArena();
 
-	Rectangle CreatePlayer(Rectangle& player);
+	Player CreatePlayer(Player& player);
 	Rectangle CreateArena(Rectangle& arenaLimits);
+	Player GetPlayer();
 
 	void Input();
 	void Update();
 	void DrawPlayer();
 	void DrawArenaLimits();
 
-	void InputPlayer(Rectangle& player);
-	void StopMovement(Rectangle& player);
-	void UpdatePlayer(Rectangle& player);
+	void InputPlayer(Player& player);
+	void StopMovement(Player& player);
+	void UpdatePlayer(Player& player);
 }

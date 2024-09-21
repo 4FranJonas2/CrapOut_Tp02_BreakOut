@@ -1,16 +1,14 @@
 #pragma once
-#include "..\Settings\Utils.h"
-
+#include "Player.h"
 namespace gameBrick
 {
-	struct Rectangle
+	struct Brick
 	{
-		Vector2 recDimensions;
-		Vector2 recPosition;
+		Rectangle rec;
 		Color recColor;
 	};
 
-	Rectangle CreateBrick(Rectangle& bricks);
+	Brick CreateBrick(Brick& bricks);
 	void InitBrick();
 	void Update();
 	void DrawBrick();

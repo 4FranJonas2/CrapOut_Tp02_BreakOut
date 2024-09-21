@@ -26,23 +26,32 @@ namespace gameLoop
 	{
 		gamePlayer::Input();
 	}
-
 	void Update(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus)
 	{
 		gamePlayer::Update();
-	}
+		gameBall::Update();
 
+		CheckColision(gamePlayer::GetPlayer(), gameBall::GetBall());
+	}
 	void Draw(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus)
 	{
 		gamePlayer::DrawPlayer();
 		gamePlayer::DrawArenaLimits();
 		gameBrick::DrawBrick();
+		gameBall::DrawBall();
 
 		slRender();
+	}
+
+
+	void CheckColision(gamePlayer::Player player, gameBall::Ball ball)
+	{
+
+
 	}
 
 	void close()
 	{
 		slClose();
-	}
+	}	
 }

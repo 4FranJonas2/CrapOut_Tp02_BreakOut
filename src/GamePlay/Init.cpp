@@ -24,6 +24,7 @@ namespace gameInit
 		gamePlayer::InitPlayer();
 		gamePlayer::InitArena();
 		gameBrick::InitBrick();
+		gameBall::InitBall(gamePlayer::GetPlayer().rec);
 	}
 	void ResetMenu()
 	{

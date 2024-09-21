@@ -2,7 +2,7 @@
 
 namespace gameBrick
 {
-	Rectangle bricks;
+	Brick bricks;
 
 	void InitBrick()
 	{
@@ -10,14 +10,14 @@ namespace gameBrick
 
 	}
 
-	Rectangle CreateBrick(Rectangle& bricks)
+	Brick CreateBrick(Brick& bricks)
 	{
 		bricks.recColor = PURPLE;
 
-		bricks.recDimensions.x = brickPaletteWidth;
-		bricks.recDimensions.y = brickPaletteHeigth;
-		bricks.recPosition.x = brickPosX;
-		bricks.recPosition.y = brickPosY;
+		bricks.rec.recDimensions.x = brickPaletteWidth;
+		bricks.rec.recDimensions.y = brickPaletteHeigth;
+		bricks.rec.recPosition.x = brickPosX;
+		bricks.rec.recPosition.y = brickPosY;
 
 		return bricks;
 	}
@@ -29,7 +29,7 @@ namespace gameBrick
 
 	void DrawBrick()
 	{
-		slRectangleFill(bricks.recPosition.x, bricks.recPosition.y,
-			bricks.recDimensions.x, bricks.recDimensions.y);
+		slRectangleFill(bricks.rec.recPosition.x, bricks.rec.recPosition.y,
+			bricks.rec.recDimensions.x, bricks.rec.recDimensions.y);
 	}
 }

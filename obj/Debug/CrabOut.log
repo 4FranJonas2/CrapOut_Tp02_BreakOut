@@ -1,17 +1,558 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  Ball.cpp
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(26,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/Entities/Ball.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(27,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/Entities/Ball.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,10): error C3646: 'recDimensions': unknown override specifier
+  (compiling source file 'src/Entities/Ball.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/Entities/Ball.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,10): error C3646: 'recPosition': unknown override specifier
+  (compiling source file 'src/Entities/Ball.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/Entities/Ball.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(17,12): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(18,12): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(19,12): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(19,32): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(20,12): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(20,37): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(20,63): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(31,24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/Entities/Ball.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(49,25): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(49,51): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(49,3): error C2660: 'slCircleFill': function does not take 3 arguments
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\libs\sigil-vc2015\include\sl.h(174,17):
+  see declaration of 'slCircleFill'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(49,3):
+  while trying to match the argument list '()'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(57,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(58,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(67,38): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(67,63): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(67,88): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(67,113): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(71,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(71,38): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(72,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(72,38): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(75,12): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(75,39): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(76,12): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(76,39): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(82,31): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(82,95): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(83,30): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(83,84): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(84,25): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(84,90): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(85,28): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(85,82): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(89,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(89,52): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(90,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(94,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(94,42): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(95,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(100,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(100,54): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(101,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(105,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(105,43): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(106,13): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(111,32): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(112,32): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(113,39): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(113,64): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(114,39): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(114,64): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(119,31): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(119,54): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(119,78): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(120,30): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(120,53): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(120,77): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(121,25): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(121,48): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(121,72): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(122,28): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(122,51): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(122,75): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(128,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(129,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(133,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(134,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(142,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(143,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(147,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Ball.cpp(148,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+  Bricks.cpp
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(26,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/Entities/Bricks.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(27,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/Entities/Bricks.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,10): error C3646: 'recDimensions': unknown override specifier
+  (compiling source file 'src/Entities/Bricks.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/Entities/Bricks.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,10): error C3646: 'recPosition': unknown override specifier
+  (compiling source file 'src/Entities/Bricks.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/Entities/Bricks.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(17,14): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(18,14): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(19,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(20,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(32,30): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(32,56): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(33,15): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(33,43): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(32,3): error C2660: 'slRectangleFill': function does not take 1 arguments
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\libs\sigil-vc2015\include\sl.h(171,17):
+  see declaration of 'slRectangleFill'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Bricks.cpp(32,3):
+  while trying to match the argument list '()'
+  
+  Player.cpp
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(26,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/Entities/Player.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(27,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/Entities/Player.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,10): error C3646: 'recDimensions': unknown override specifier
+  (compiling source file 'src/Entities/Player.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/Entities/Player.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,10): error C3646: 'recPosition': unknown override specifier
+  (compiling source file 'src/Entities/Player.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/Entities/Player.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(16,17): error C2664: 'Rectangle gamePlayer::CreateArena(Rectangle &)': cannot convert argument 1 from 'gamePlayer::Arena' to 'Rectangle &'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.h(30,12):
+  see declaration of 'gamePlayer::CreateArena'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(16,17):
+  while trying to match the argument list '(gamePlayer::Arena)'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(24,14): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(25,14): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(26,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(27,14): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(35,19): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(36,19): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(37,19): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(38,19): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(59,30): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(59,56): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(60,15): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(60,42): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(59,3): error C2660: 'slRectangleFill': function does not take 1 arguments
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\libs\sigil-vc2015\include\sl.h(171,17):
+  see declaration of 'slRectangleFill'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(59,3):
+  while trying to match the argument list '()'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(65,38): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(65,69): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(66,20): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(66,53): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(65,3): error C2660: 'slRectangleOutline': function does not take 1 arguments
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\libs\sigil-vc2015\include\sl.h(172,17):
+  see declaration of 'slRectangleOutline'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(65,3):
+  while trying to match the argument list '()'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(92,15): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(92,42): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(97,40): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(97,67): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(98,39): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(98,66): error C2039: 'recDimensions': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(104,16): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Entities\Player.cpp(111,16): error C2039: 'recPosition': is not a member of 'Rectangle'
+  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(34,8):
+  see declaration of 'Rectangle'
+  
   GameLoop.cpp
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(26,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/GamePlay/GameLoop.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(27,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/GamePlay/GameLoop.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,10): error C3646: 'recDimensions': unknown override specifier
+  (compiling source file 'src/GamePlay/GameLoop.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/GamePlay/GameLoop.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,10): error C3646: 'recPosition': unknown override specifier
+  (compiling source file 'src/GamePlay/GameLoop.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/GamePlay/GameLoop.cpp')
+  
   Init.cpp
-  main.cpp
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(26,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/GamePlay/Init.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(27,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/GamePlay/Init.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,10): error C3646: 'recDimensions': unknown override specifier
+  (compiling source file 'src/GamePlay/Init.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/GamePlay/Init.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,10): error C3646: 'recPosition': unknown override specifier
+  (compiling source file 'src/GamePlay/Init.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/GamePlay/Init.cpp')
+  
 C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\GamePlay\Init.cpp(14,25): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
 C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\GamePlay\Init.cpp(14,12): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+  main.cpp
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(26,27): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/GamePlay/main.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Constants.h(27,26): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  (compiling source file 'src/GamePlay/main.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,10): error C3646: 'recDimensions': unknown override specifier
+  (compiling source file 'src/GamePlay/main.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(36,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/GamePlay/main.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,10): error C3646: 'recPosition': unknown override specifier
+  (compiling source file 'src/GamePlay/main.cpp')
+  
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\Settings\Utils.h(37,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'src/GamePlay/main.cpp')
+  
 C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\GamePlay\main.cpp(8,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Menu.cpp
   Generating Code...
-  CrabOut.vcxproj -> C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\bin\Debug\CrabOut.exe
-  copiando dll y res....
-          1 archivo(s) copiado(s).
-          1 archivo(s) copiado(s).
-          1 archivo(s) copiado(s).
-          1 archivo(s) copiado(s).
-  C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\res\hHittoSushi.ttf
-  1 archivo(s) copiado(s)

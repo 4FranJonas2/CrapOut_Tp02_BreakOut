@@ -3,8 +3,8 @@
 
 namespace gamePlayer
 {
-	Rectangle player;
-	Rectangle arenaLimits;
+	Player player;
+	Arena arenaLimits;
 	Color color;
 
 	void InitPlayer()
@@ -16,28 +16,33 @@ namespace gamePlayer
 		arenaLimits = CreateArena(arenaLimits);
 	}
 
-	Rectangle CreatePlayer(Rectangle& player)
+	Player CreatePlayer(Player& player)
 	{
 		player.playerDir = DIRECTION::STOP;
 		player.recColor = WHITE;
 
-		player.recDimensions.x = playerPaletteWidth;
-		player.recDimensions.y = playerPaletteHeigth;
-		player.recPosition.x = playerPosX;
-		player.recPosition.y = playerPosY;
+		player.rec.recDimensions.x = playerPaletteWidth;
+		player.rec.recDimensions.y = playerPaletteHeigth;
+		player.rec.recPosition.x = playerPosX;
+		player.rec.recPosition.y = playerPosY;
 
 		return player;
 	}
-	Rectangle CreateArena(Rectangle& arenaLimits)
+	Arena CreateArena(Arena& arenaLimits)
 	{
 		arenaLimits.recColor = RED;
 
-		arenaLimits.recDimensions.x = arenaPaletteWidth;
-		arenaLimits.recDimensions.y = arenaPaletteHeigth;
-		arenaLimits.recPosition.x = arenaPosX;
-		arenaLimits.recPosition.y = arenaPosY;
+		arenaLimits.rec.recDimensions.x = arenaPaletteWidth;
+		arenaLimits.rec.recDimensions.y = arenaPaletteHeigth;
+		arenaLimits.rec.recPosition.x = arenaPosX;
+		arenaLimits.rec.recPosition.y = arenaPosY;
 
 		return arenaLimits;
+	}
+
+	Player GetPlayer()
+	{
+		return player;
 	}
 
 	void Input()
@@ -51,18 +56,23 @@ namespace gamePlayer
 	void DrawPlayer()
 	{
 		slSetForeColor(RED.r, RED.g, RED.b, RED.a);
-		slRectangleFill(player.recPosition.x, player.recPosition.y,
-			player.recDimensions.x,player.recDimensions.y);
+		slRectangleFill(player.rec.recPosition.x, player.rec.recPosition.y,
+			player.rec.recDimensions.x,player.rec.recDimensions.y);
 		slSetForeColor(WHITE.r, WHITE.g, WHITE.b, WHITE.a);
 	}
 	void DrawArenaLimits()
 	{
-		slRectangleOutline(arenaLimits.recPosition.x, arenaLimits.recPosition.y,
-			arenaLimits.recDimensions.x, arenaLimits.recDimensions.y);	
+		slRectangleOutline(arenaLimits.rec.recPosition.x, arenaLimits.rec.recPosition.y,
+			arenaLimits.rec.recDimensions.x, arenaLimits.rec.recDimensions.y);
 	}
 
-	void InputPlayer(Rectangle& player)
+	void InputPlayer(Player& player)
 	{
+		if (slGetKey(SL_KEY_ENTER))
+		{
+
+		}
+
 		if (slGetKey(SL_KEY_RIGHT))
 		{
 			player.playerDir = DIRECTION::RIGHT;
@@ -74,31 +84,31 @@ namespace gamePlayer
 
 		StopMovement(player);
 	}
-	void StopMovement(Rectangle& player)
+	void StopMovement(Player& player)
 	{
 		if (!slGetKey(SL_KEY_RIGHT) && !slGetKey(SL_KEY_LEFT))
 		{
 			player.playerDir = DIRECTION::STOP;
-			player.recPosition.x = player.recPosition.x;
+			player.rec.recPosition.x = player.rec.recPosition.x;
 		}
 	}
-	void UpdatePlayer(Rectangle& player)
+	void UpdatePlayer(Player& player)
 	{
-		bool IsRightSideScreen = (player.recPosition.x + player.recDimensions.x/2) >= (screenWidth - minDistanceFromBorder);
-		bool IsLeftSideScreen = (player.recPosition.x - player.recDimensions.x / 2) <= 0 + minDistanceFromBorder;
+		bool IsRightSideScreen = (player.rec.recPosition.x + player.rec.recDimensions.x/2) >= (screenWidth - minDistanceFromBorder);
+		bool IsLeftSideScreen = (player.rec.recPosition.x - player.rec.recDimensions.x / 2) <= 0 + minDistanceFromBorder;
 
 		if (player.playerDir == DIRECTION::RIGHT)
 		{
 			if (!IsRightSideScreen)
 			{
-				player.recPosition.x += playerSpeed * slGetDeltaTime();
+				player.rec.recPosition.x += playerSpeed * slGetDeltaTime();
 			}
 		}
 		if (player.playerDir == DIRECTION::LEFT)
 		{
 			if (!IsLeftSideScreen)
 			{
-				player.recPosition.x -= playerSpeed * slGetDeltaTime();
+				player.rec.recPosition.x -= playerSpeed * slGetDeltaTime();
 			}
 		}
 	}
