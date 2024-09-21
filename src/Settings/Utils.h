@@ -1,6 +1,6 @@
 #pragma once
-#include "Color.h"
 #include "sl.h"
+#include "Color.h"
 #include "Constants.h"
 
 enum class LOOPSTATUS
@@ -36,11 +36,3 @@ struct Vector2
 	float x;
 	float y;
 };
-
-struct Ball
-{
-	float radius;
-	Vector2 ballPosition;
-	Color ballColor = RED;
-};
-

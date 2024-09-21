@@ -1,13 +1,10 @@
 #include "Init.h"
-//#include "Player.cpp"
-//#include "Player.h"
 
 namespace gameInit
 {
 	void Init(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus)
 	{
 		InitSim(simStatus, simMenuStatus, simGamePlayStatus);
-		
 
 	}
 
@@ -26,18 +23,15 @@ namespace gameInit
 		//set up entitys
 		gamePlayer::InitPlayer();
 		gamePlayer::InitArena();
-		gamePlayer::InitBrick();
+		gameBrick::InitBrick();
 	}
-
 	void ResetMenu()
 	{
 
 	}
-
 	void ResetGameplay()
 	{
 
 	}
-
 }
 

@@ -26,9 +26,6 @@
     <ClInclude Include="src\Settings\Constants.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="src\GamePlay\GameLoop.h">
-      <Filter>Archivos de encabezado</Filter>
-    </ClInclude>
     <ClInclude Include="src\GamePlay\Init.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
@@ -41,14 +38,11 @@
     <ClInclude Include="src\Settings\Utils.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="src\GamePlay\GameLoop.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\GamePlay\GameLoop.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
-    <ClCompile Include="src\GamePlay\Init.cpp">
-      <Filter>Archivos de origen</Filter>
-    </ClCompile>
     <ClCompile Include="src\GamePlay\main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
@@ -62,6 +56,12 @@
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="src\Entities\Player.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamePlay\GameLoop.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GamePlay\Init.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>

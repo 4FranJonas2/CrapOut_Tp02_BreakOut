@@ -1,21 +1,15 @@
 #include "Player.h"
-#include "Color.h"
+
 
 namespace gamePlayer
 {
 	Rectangle player;
-	Rectangle bricks;
 	Rectangle arenaLimits;
 	Color color;
 
 	void InitPlayer()
 	{
 		player = CreatePlayer(player);
-	}
-	void InitBrick()
-	{
-		bricks = CreateBrick(bricks);
-
 	}
 	void InitArena()
 	{
@@ -33,17 +27,6 @@ namespace gamePlayer
 		player.recPosition.y = playerPosY;
 
 		return player;
-	}
-	Rectangle CreateBrick(Rectangle& bricks)
-	{
-		bricks.recColor = PURPLE;
-		
-		bricks.recDimensions.x = brickPaletteWidth;
-		bricks.recDimensions.y = brickPaletteHeigth;
-		bricks.recPosition.x = brickPosX;
-		bricks.recPosition.y = brickPosY;
-
-		return bricks;
 	}
 	Rectangle CreateArena(Rectangle& arenaLimits)
 	{
@@ -76,11 +59,6 @@ namespace gamePlayer
 	{
 		slRectangleOutline(arenaLimits.recPosition.x, arenaLimits.recPosition.y,
 			arenaLimits.recDimensions.x, arenaLimits.recDimensions.y);	
-	}
-	void DrawBrick()
-	{
-		slRectangleFill(bricks.recPosition.x, bricks.recPosition.y,
-			bricks.recDimensions.x, bricks.recDimensions.y);
 	}
 
 	void InputPlayer(Rectangle& player)

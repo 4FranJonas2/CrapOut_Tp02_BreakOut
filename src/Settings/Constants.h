@@ -2,6 +2,7 @@
 
 const float screenWidth = 800.0f;
 const float screenHeight = 650.0f;
+const float auxFloat = 100.0f;
 
 //player settings
 const float minDistanceFromBorder = 10.0f;
@@ -17,6 +18,15 @@ const float brickPaletteWidth = 60.0f;
 const float brickPaletteHeigth = 25.0f;
 const float brickPosX = 60.0f;
 const float brickPosY = 610.0f;
+
+//ball settings
+const float maxBallXSpeed = 400.0f;
+const float maxBallYSpeed = 200.0f;
+const int ballWidth = 15;
+const int ballRad = 10;
+const int ballMinRange = -100.0f;
+const int ballMaxRange = 100.0f;
+const float ballSpeed = 500.0f;
 
 //arena settings
 const float arenaPaletteWidth = screenWidth - minDistanceFromBorder;

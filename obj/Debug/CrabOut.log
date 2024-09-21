@@ -1,5 +1,13 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
 C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  GameLoop.cpp
+  Init.cpp
+  main.cpp
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\GamePlay\Init.cpp(14,25): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\GamePlay\Init.cpp(14,12): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\src\GamePlay\main.cpp(8,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Generating Code...
+  CrabOut.vcxproj -> C:\Users\Fran\OneDrive\Escritorio\Fran\ImageCampus\2024\Desarrollo I\CrapOut_Tp02_BreakOut\bin\Debug\CrabOut.exe
   copiando dll y res....
           1 archivo(s) copiado(s).
           1 archivo(s) copiado(s).

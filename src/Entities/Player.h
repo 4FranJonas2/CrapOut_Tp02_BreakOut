@@ -19,18 +19,15 @@ namespace gamePlayer
 	};
 
 	void InitPlayer();
-	void InitBrick();
 	void InitArena();
 
 	Rectangle CreatePlayer(Rectangle& player);
-	Rectangle CreateBrick(Rectangle& bricks);
 	Rectangle CreateArena(Rectangle& arenaLimits);
 
 	void Input();
 	void Update();
 	void DrawPlayer();
 	void DrawArenaLimits();
-	void DrawBrick();
 
 	void InputPlayer(Rectangle& player);
 	void StopMovement(Rectangle& player);
