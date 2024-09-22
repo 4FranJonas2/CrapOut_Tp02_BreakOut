@@ -14,10 +14,10 @@ namespace gameBrick
 	{
 		bricks.recColor = PURPLE;
 
-		bricks.rec.recDimensions.x = brickPaletteWidth;
-		bricks.rec.recDimensions.y = brickPaletteHeigth;
-		bricks.rec.recPosition.x = brickPosX;
-		bricks.rec.recPosition.y = brickPosY;
+		bricks.rec.size.x = brickPaletteWidth;
+		bricks.rec.size.y = brickPaletteHeigth;
+		bricks.rec.pos.x = brickPosX;
+		bricks.rec.pos.y = brickPosY;
 
 		return bricks;
 	}
@@ -29,7 +29,7 @@ namespace gameBrick
 
 	void DrawBrick()
 	{
-		slRectangleFill(bricks.rec.recPosition.x, bricks.rec.recPosition.y,
-			bricks.rec.recDimensions.x, bricks.rec.recDimensions.y);
+		slRectangleFill(bricks.rec.pos.x, bricks.rec.pos.y,
+			bricks.rec.size.x, bricks.rec.size.y);
 	}
 }

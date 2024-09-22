@@ -5,7 +5,7 @@
 namespace gameBall
 {
 	Ball ball;
-	Rectangle player;
+	Rectangle rec;
 
 	void InitBall(Rectangle rec)
 	{
@@ -14,10 +14,10 @@ namespace gameBall
 	Ball CreateBall(Ball& ball, Rectangle rec)
 	{
 		ball.ballColor = RED;
-		ball.rec.recDimensions.x = ballWidth;
-		ball.rec.recDimensions.y = ballHeigth;
-		ball.rec.recPosition.x = rec.recDimensions.x;
-		ball.rec.recPosition.y = ball.rec.recDimensions.y / 2 + rec.recDimensions.y;
+		ball.rec.size.x = ballWidth;
+		ball.rec.size.y = ballHeigth;
+		ball.rec.pos.x = rec.size.x;
+		ball.rec.pos.y = ball.rec.size.y / 2 + rec.size.y;
 		ball.radius = ballRad;
 
 		ball.ballVectorRanges.x = ballMinRange;
@@ -42,11 +42,11 @@ namespace gameBall
 		//normal movmment
 		normaliceBallVector(ball);
 		CheckArenaCollision(ball);
-		ChekPlayerCollision(ball, player);
+		ChekPlayerCollision(ball, rec);
 	}
 	void DrawBall()
 	{
-		slCircleFill(ball.rec.recDimensions.x, ball.rec.recDimensions.y, ball.radius, ball.ballVertices);
+		slCircleFill(ball.rec.size.x, ball.rec.size.y, ball.radius, ball.ballVertices);
 	}
 
 	static void GetRandInitDir(Ball& ball)
@@ -54,8 +54,8 @@ namespace gameBall
 		//set random init vector
 		if (slGetKey(SL_KEY_ENTER) && !ball.ballInitlaunch)
 		{
-			ball.rec.recPosition.x = 0 + (rand() % ballMaxRange + 1);
-			ball.rec.recPosition.y = 0 + (rand() % ballMaxRange + 1);
+			ball.rec.pos.x = 0 + (rand() % ballMaxRange + 1);
+			ball.rec.pos.y = 0 + (rand() % ballMaxRange + 1);
 
 			normaliceBallVector(ball);
 
@@ -64,74 +64,74 @@ namespace gameBall
 	}
 	void normaliceBallVector(Ball& ball)
 	{
-		float vectorLength = sqrt(ball.rec.recPosition.x * ball.rec.recPosition.x + ball.rec.recPosition.y * ball.rec.recPosition.y);
+		float vectorLength = sqrt(ball.rec.pos.x * ball.rec.pos.x + ball.rec.pos.y * ball.rec.pos.y);
 
 		if (vectorLength != 0)
 		{
-			ball.rec.recPosition.x = ball.rec.recPosition.x / vectorLength;
-			ball.rec.recPosition.y = ball.rec.recPosition.y / vectorLength;
+			ball.rec.pos.x = ball.rec.pos.x / vectorLength;
+			ball.rec.pos.y = ball.rec.pos.y / vectorLength;
 		}
 
-		ball.rec.recPosition.x += (ball.rec.recPosition.x * ballSpeed) * slGetDeltaTime();
-		ball.rec.recPosition.y += (ball.rec.recPosition.y * ballSpeed) * slGetDeltaTime();
+		ball.rec.pos.x += (ball.rec.pos.x * ballSpeed) * slGetDeltaTime();
+		ball.rec.pos.y += (ball.rec.pos.y * ballSpeed) * slGetDeltaTime();
 	}
 
 	void CheckArenaCollision(Ball& ball)
 	{
 		// Check walls collision
-		bool IsRigthSide = ball.rec.recPosition.x >= screenWidth - minDistanceFromBorder - ball.rec.recDimensions.x;
-		bool IsLeftSide = ball.rec.recPosition.x <= 0 + minDistanceFromBorder + ball.rec.recDimensions.x;
-		bool IsTop = ball.rec.recPosition.y <= screenHeight + minDistanceFromBorder + ball.rec.recDimensions.y;
-		bool IsBottom = ball.rec.recPosition.y >= 0 + minDistanceFromBorder + ball.rec.recDimensions.y;
+		bool IsRigthSide = ball.rec.pos.x >= screenWidth - minDistanceFromBorder - ball.rec.size.x;
+		bool IsLeftSide = ball.rec.pos.x <= 0 + minDistanceFromBorder + ball.rec.size.x;
+		bool IsTop = ball.rec.pos.y <= screenHeight + minDistanceFromBorder + ball.rec.size.y;
+		bool IsBottom = ball.rec.pos.y >= 0 + minDistanceFromBorder + ball.rec.size.y;
 
 		if (IsRigthSide)
 		{
-			ball.rec.recPosition.x = screenWidth - ball.rec.recDimensions.x - minDistanceFromBorder;
-			ball.rec.recPosition.x *= -1.0f;
+			ball.rec.pos.x = screenWidth - ball.rec.size.x - minDistanceFromBorder;
+			ball.rec.pos.x *= -1.0f;
 		}
 		else if (IsLeftSide)
 		{
-			ball.rec.recPosition.x = 0 + ball.rec.recDimensions.x + minDistanceFromBorder;
-			ball.rec.recPosition.x *= -1.0f;
+			ball.rec.pos.x = 0 + ball.rec.size.x + minDistanceFromBorder;
+			ball.rec.pos.x *= -1.0f;
 		}
 
 		if (IsTop)
 		{
-			ball.rec.recPosition.y = (screenHeight - ball.rec.recDimensions.y - minDistanceFromBorder);
-			ball.rec.recPosition.y *= -1.0f;
+			ball.rec.pos.y = (screenHeight - ball.rec.size.y - minDistanceFromBorder);
+			ball.rec.pos.y *= -1.0f;
 		}
 		else if (IsBottom)
 		{
-			ball.rec.recPosition.y = (0 + ball.rec.recDimensions.y + minDistanceFromBorder);
-			ball.rec.recPosition.y *= -1.0f;
+			ball.rec.pos.y = (0 + ball.rec.size.y + minDistanceFromBorder);
+			ball.rec.pos.y *= -1.0f;
 		}
 	}
 	void ChekPlayerCollision(Ball& ball, Rectangle player)
 	{
-		float minDistanceX = (player.recDimensions.x / 2) + ball.radius;
-		float minDistanceY = (player.recDimensions.y / 2) + ball.radius;
-		float distanceBallRecX = abs(player.recPosition.x - ball.rec.recPosition.x);
-		float distanceBallRecY = abs(player.recPosition.y - ball.rec.recPosition.y);
+		float minDistanceX = (player.size.x / 2) + ball.radius;
+		float minDistanceY = (player.size.y / 2) + ball.radius;
+		float distanceBallRecX = abs(player.pos.x - ball.rec.pos.x);
+		float distanceBallRecY = abs(player.pos.y - ball.rec.pos.y);
 		float penetrationX = abs(minDistanceX - distanceBallRecX);
 		float penetrationY = abs(minDistanceY - distanceBallRecY);
 		bool collisionIsInX = penetrationX < penetrationY;
 
-		bool IsRigthSide = ball.rec.recPosition.x > player.recPosition.x + (player.recDimensions.x / 2);
-		bool IsLeftSide = ball.rec.recPosition.x < player.recPosition.x - (player.recDimensions.x / 2);
-		bool IsTop = ball.rec.recPosition.y < player.recPosition.y - (player.recDimensions.y / 2);
-		bool IsBottom = ball.rec.recPosition.y > player.recPosition.y + (player.recDimensions.y / 2);
+		bool IsRigthSide = ball.rec.pos.x > player.pos.x + (player.size.x / 2);
+		bool IsLeftSide = ball.rec.pos.x < player.pos.x - (player.size.x / 2);
+		bool IsTop = ball.rec.pos.y < player.pos.y - (player.size.y / 2);
+		bool IsBottom = ball.rec.pos.y > player.pos.y + (player.size.y / 2);
 
 		if (collisionIsInX)
 		{
 			if (IsRigthSide)
 			{
-				ball.rec.recPosition.x += penetrationX;
-				ball.rec.recPosition.x *= -1.0f;
+				ball.rec.pos.x += penetrationX;
+				ball.rec.pos.x *= -1.0f;
 			}
 			else if (IsLeftSide)
 			{
-				ball.rec.recPosition.x -= penetrationX;
-				ball.rec.recPosition.x *= -1.0f;
+				ball.rec.pos.x -= penetrationX;
+				ball.rec.pos.x *= -1.0f;
 			}
 		}
 
@@ -139,13 +139,13 @@ namespace gameBall
 		{
 			if (IsTop)
 			{
-				ball.rec.recPosition.y -= penetrationY;
-				ball.rec.recPosition.y *= -1.0f;
+				ball.rec.pos.y -= penetrationY;
+				ball.rec.pos.y *= -1.0f;
 			}
 			else if (IsBottom)
 			{
-				ball.rec.recPosition.y += penetrationY;
-				ball.rec.recPosition.y *= -1.0f;
+				ball.rec.pos.y += penetrationY;
+				ball.rec.pos.y *= -1.0f;
 			}
 		}
 		/*if (distance <= ball.ballRad)

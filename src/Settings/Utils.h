@@ -31,14 +31,14 @@ enum class GAMESTATUS
 	GAMEEND
 };
 
-struct Rectangle
-{
-	Vector2 recDimensions;
-	Vector2 recPosition;
-};
-
 struct Vector2
 {
 	float x;
 	float y;
+};
+
+struct Rectangle
+{
+	Vector2 size;
+	Vector2 pos;
 };
