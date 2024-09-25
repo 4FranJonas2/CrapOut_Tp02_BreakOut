@@ -27,7 +27,7 @@ namespace gamePlayer
 	void InitArena();
 
 	Player CreatePlayer(Player& player);
-	Rectangle CreateArena(Rectangle& arenaLimits);
+	Arena CreateArena(Arena& arenaLimits);
 	Player GetPlayer();
 
 	void Input();

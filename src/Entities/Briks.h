@@ -6,10 +6,13 @@ namespace gameBrick
 	{
 		Rectangle rec;
 		Color recColor;
+		bool isAlive = true;
 	};
 
-	Brick CreateBrick(Brick& bricks);
+
 	void InitBrick();
+	Brick CreateBrick(Brick& brick, int i, int j);
+	void paintBrik(Color color);
 	void Update();
 	void DrawBrick();
 }

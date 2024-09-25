@@ -25,30 +25,31 @@ namespace gameLoop
 	void Input(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus)
 	{
 		gamePlayer::Input();
+		gameBall::Input();
 	}
 	void Update(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus)
 	{
 		gamePlayer::Update();
-		gameBall::Update();
+		gameBall::Update(gamePlayer::GetPlayer().rec, gamePlayer::GetPlayer().rec);
 
-		CheckColision(gamePlayer::GetPlayer(), gameBall::GetBall());
+		//CheckColision(gamePlayer::GetPlayer(), gameBall::GetBall());
 	}
 	void Draw(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus)
 	{
 		gamePlayer::DrawPlayer();
 		gamePlayer::DrawArenaLimits();
 		gameBrick::DrawBrick();
-		gameBall::DrawBall();
+		gameBall::DrawBall(gamePlayer::GetPlayer().rec);
 
 		slRender();
 	}
 
 
-	void CheckColision(gamePlayer::Player player, gameBall::Ball ball)
+	/*void CheckColision(gamePlayer::Player player, gameBall::Ball ball)
 	{
-
-
-	}
+		CheckArenaCollision(ball);
+		ChekRecCollision(ball, player.rec);
+	}*/
 
 	void close()
 	{

@@ -2,34 +2,59 @@
 
 namespace gameBrick
 {
-	Brick bricks;
-
+	Brick bricks[maxBriksRows][maxBriksCols];
+	Brick brick;
 	void InitBrick()
 	{
-		bricks = CreateBrick(bricks);
-
+		for (int i = 0; i < maxBriksRows; i++)
+		{
+			for (int j = 0; j < maxBriksCols; j++)
+			{
+				bricks[i][j] = CreateBrick(brick, i, j);
+			}
+		}
 	}
 
-	Brick CreateBrick(Brick& bricks)
+	Brick CreateBrick(Brick& brick, int i, int j)
 	{
-		bricks.recColor = PURPLE;
+		brick.recColor = PURPLE;
+		brick.rec.pos.x = 0;
+		brick.rec.pos.y = 0;
 
-		bricks.rec.size.x = brickPaletteWidth;
-		bricks.rec.size.y = brickPaletteHeigth;
-		bricks.rec.pos.x = brickPosX;
-		bricks.rec.pos.y = brickPosY;
+		brick.rec.size.x = brickPaletteWidth ;
+		brick.rec.size.y = brickPaletteHeigth ;
+		brick.rec.pos.x = brickPosX + (brickPaletteWidth + horizontalSpacing) * j;
+		if (i > 0)
+		{
+			brick.rec.pos.y = brickPosY - (brickPaletteHeigth + verticalSpacing) * i;
+		}
+		else
+		{
+			brick.rec.pos.y = brickPosY;
+		}
+		return brick;
+	}
 
-		return bricks;
+	void paintBrik(Color color)
+	{
+		slSetForeColor(color.r, color.g, color.b, color.a);
 	}
 
 	void Update()
 	{
-
 	}
 
 	void DrawBrick()
 	{
-		slRectangleFill(bricks.rec.pos.x, bricks.rec.pos.y,
-			bricks.rec.size.x, bricks.rec.size.y);
+		for (int i = 0; i < maxBriksRows; i++)
+		{
+			for (int j = 0; j < maxBriksCols; j++)
+			{
+				paintBrik(PURPLE);
+				slRectangleFill(bricks[i][j].rec.pos.x, bricks[i][j].rec.pos.y,
+					bricks[i][j].rec.size.x, bricks[i][j].rec.size.y);
+				paintBrik(WHITE);
+			}
+		}
 	}
 }

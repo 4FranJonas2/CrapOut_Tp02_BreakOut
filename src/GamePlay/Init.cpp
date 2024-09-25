@@ -5,7 +5,6 @@ namespace gameInit
 	void Init(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus)
 	{
 		InitSim(simStatus, simMenuStatus, simGamePlayStatus);
-
 	}
 
 	void InitSim(LOOPSTATUS& simStatus, MAINMENUSTATUS& simMenuStatus, GAMESTATUS& simGamePlayStatus)

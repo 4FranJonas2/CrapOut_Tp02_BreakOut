@@ -68,11 +68,6 @@ namespace gamePlayer
 
 	void InputPlayer(Player& player)
 	{
-		if (slGetKey(SL_KEY_ENTER))
-		{
-
-		}
-
 		if (slGetKey(SL_KEY_RIGHT))
 		{
 			player.playerDir = DIRECTION::RIGHT;
@@ -94,7 +89,7 @@ namespace gamePlayer
 	}
 	void UpdatePlayer(Player& player)
 	{
-		bool IsRightSideScreen = (player.rec.pos.x + player.rec.size.x/2) >= (screenWidth - minDistanceFromBorder);
+		bool IsRightSideScreen = (player.rec.pos.x + player.rec.size.x/2) >= (arenaPaletteWidth - minDistanceFromBorder);
 		bool IsLeftSideScreen = (player.rec.pos.x - player.rec.size.x / 2) <= 0 + minDistanceFromBorder;
 
 		if (player.playerDir == DIRECTION::RIGHT)
